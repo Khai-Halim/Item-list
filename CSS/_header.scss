@@ -1,0 +1,47 @@
+#header{
+    padding: 20px 0;
+}
+
+h1{
+    text-align: center;
+    background: $yellow;
+}
+
+h2{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    
+}
+
+h3{
+    text-transform: capitalize;
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+
+#search{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+ul{
+    li{
+        list-style: none;
+        padding: 10px;
+        padding-left: 1.4rem;
+        margin: 15px;
+        border-left: 2px solid grey;
+    }
+}
+
+.item{
+
+}
+
+.delete{
+    background: $green;
+    border-radius: 5px;
+    padding: 4px;
+}

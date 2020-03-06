@@ -1,0 +1,24 @@
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.background-yellow{
+    background: $yellow;
+}
+
+form{
+    text-align: center;
+}
+
+input[type='text']{
+    width: 300px;
+    max-width: 90vw;
+    height: 30px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-left: 1px solid $grey;
+    border-top: 1px solid $grey;
+}
+

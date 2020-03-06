@@ -1,0 +1,46 @@
+button{
+    min-width: 100px;
+    height: 30px;
+}
+
+
+
+ul{
+    overflow: scroll;
+    max-height: 70vh;
+    li{
+        list-style: none;
+        padding: 10px;
+        padding-left: 1.4rem;
+        margin: 15px;
+        border-left: 2px solid grey;
+    }
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item{
+
+}
+
+.delete{
+    background: $green;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#add{
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    button{
+        background: $green;
+        border-radius: 6px;
+        cursor: pointer;
+     }
+}
