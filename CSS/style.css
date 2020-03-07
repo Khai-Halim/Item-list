@@ -33,6 +33,7 @@ input[type='text'] {
   border-bottom-right-radius: 7px;
   border-left: 1px solid #bbb;
   border-top: 1px solid #bbb;
+  padding-left: 4px;
 }
 
 #header {
@@ -60,20 +61,6 @@ h3 {
 #search {
   margin-top: 20px;
   margin-bottom: 5px;
-}
-
-ul li {
-  list-style: none;
-  padding: 10px;
-  padding-left: 1.4rem;
-  margin: 15px;
-  border-left: 2px solid grey;
-}
-
-.delete {
-  background: #c1f1c1;
-  border-radius: 5px;
-  padding: 4px;
 }
 
 button {
