@@ -3,17 +3,27 @@
 let ul = document.querySelector('#list');
 const addForm = document.forms['add'];
 const searchForm = document.forms['search'];  
+let myToDos = ['a','b'];
 
-//Delete functionality
+//SAVE data
+function save(){
+    localStorage.setItem('lists', ul.innerHTML);
+}
+
+//LOAD data from local storage
+ul.innerHTML =  localStorage.getItem('lists');
+
+//Delete an item
 ul.addEventListener('click', function(e){
     if(e.target.className == "delete"){
         let li = e.target.parentElement
-        ul.removeChild(li);  
+        ul.removeChild(li); 
     }
+    //save
+    save();
 });
 
-//Add functionality
-
+//Add an item
 addForm.addEventListener('submit', function(e){
 
     //store the users input
@@ -47,14 +57,15 @@ addForm.addEventListener('submit', function(e){
 
     //clear the input
         input.value = "";
+        console.log(myToDos);
+
+    //save
+    save();
 });
 
 //Search functionality
 
- 
-
 searchForm.addEventListener('keyup', function(e){
-    
     let value = e.target.value.toLowerCase();
     let items = ul.querySelectorAll('li');
 
@@ -62,15 +73,16 @@ searchForm.addEventListener('keyup', function(e){
 
         let note = item.firstElementChild.innerText.toLowerCase();
        
+        //indexOf returns -1 if the value is not found
         if(note.indexOf(value) != -1){
-
             //Show item
             item.style.display = 'flex';
         }else{
             //hide item
-
             item.style.display = 'none';
         }
     })
 });
+
+
 
