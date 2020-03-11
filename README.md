@@ -1,1 +1,1 @@
-A to do list that allows the user to add, remove and search for items.
+A list that allows the user to add, remove and search for items.
