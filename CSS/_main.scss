@@ -1,37 +1,46 @@
+main{
+    max-height: 50vh;
+}
+
 button{
     min-width: 100px;
     height: 30px;
+    margin-top: 8px;
 }
 
-
-
 ul{
-    overflow: scroll;
+    padding-top: 200px;
+    overflow: hide;
     max-height: 70vh;
     li{
         list-style: none;
         padding: 10px;
-        padding-left: 1.4rem;
-        margin: 15px;
-        border-left: 2px solid grey;
+        padding-left: 1rem;
+        margin: 10px;
+        border-left: 1.5px solid grey;
     }
 }
 
 li{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .delete{
+    flex: 0 0 0;
     background: $green;
     border-radius: 5px;
-    padding: 4px;
+    padding: 0.4rem;
     cursor: pointer;
 }
 
 #add{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: $yellow;
     position: fixed;
-    bottom: 30px;
+    bottom: 0;
     left: 0;
     right: 0;
     button{
@@ -39,4 +48,10 @@ li{
         border-radius: 6px;
         cursor: pointer;
      }
+}
+
+@media screen and (max-width: 700px){
+    .wrapper{
+        width: 95%;
+    }
 }
